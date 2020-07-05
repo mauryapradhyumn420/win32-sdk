@@ -42,9 +42,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 
 	fprintf_s(gpFile, "CREATE WINDOW\n");
 
-	bSpi=SystemParametersInfo(SPI_GETWORKAREA,0,&rc,0);
+	bSpi=SystemParametersInfo(SPI_GETWORKAREA,0,&rc,0);		//Get height and width of desktop work area
 	
-
 	iHeight = rc.bottom;
 	iWidth = rc.right;
 	if(bSpi)
