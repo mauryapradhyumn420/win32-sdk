@@ -61,6 +61,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
 	switch (iMsg)
 	{
 	case WM_DESTROY:
+	//	DeleteObject(HBRUSH); function must use to delete Custom Brush Created by CreateSolidBrush();
 		PostQuitMessage(0);
 		break;
 	case WM_CHAR:
